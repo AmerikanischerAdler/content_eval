@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Content Evaluation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Content Evaluation</h1>
+    <hr>
+    <h3 class="rule">Limit: <span><span>5</span> Movies per Week</span></h3>
+    <hr>
+    <section class="to-watch">
+      <h3>Consideration Questions Before Watching:</h3>
+      <ol>
+        <li>
+          Is it on the "Watch Every Year" List?
+        </li>
+        <li>
+          Does it have at least one character I connect with and can learn
+          from?
+        </li>
+        <li>
+          What is the Opportunity Cost of Watching this?
+        </li>
+      </ol>
+      <p>Example: Would it be more valuable to study for the BSCP?</p>
+    </section>
+    <hr>
+    <section class="info">
+      <h3>Content Info</h3>
+      <form>
+        <div class="info-box">
+          <h4>Content Type</h4>
+          <div class="checkbox">
+            <input type="checkbox" id="movie">
+            <label for="movie">Movie</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="youtube">
+            <label for="youtube">Youtube</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="book">
+            <label for="book">Book</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="other">
+            <label for="other">Other</label>
+            <span class="fill"><input type="text" id="type"></span>
+          </div>
+        </div>
+        <div class="info-box">
+          <h4>Content Title</h4>
+          <input type="text" id="titel">
+        </div>
+        <div class="info-box">
+          <h4>Content Description</h4>
+          <textarea id="desc" name="desc"></textarea>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="container">
+    <h1>Content Evaluation</h1>
+    <hr>
+    <section class="char-eval">
+      <h3>Character Analysis</h3>
+      <form>
+        <label for="reflect">In What Ways Do I See Myself as This Character?</label>
+        <textarea id="reflect" name="reflect"></textarea>
+        <label for="love">What Do I Love About This Character?</label>
+        <textarea id="love" name="love"></textarea>
+        <label for="hate">What Do I Hate About This Character?</label>
+        <textarea id="hate" name="hate"></textarea>
+        <label for="lesson">What Can I Learn From This Character?</label>
+        <textarea id="lesson" name="lesson"></textarea>
+      </form>
+    </section>
+    <hr>
+    <section class="else">
+      <h3>Application</h3>
+      <form>
+        <label for="insights">Additional Insights Gained</label>
+        <textarea id="insights" name="insights"></textarea>
+        <label for="change">Behavior Change(s)</label>
+        <div class="quote">
+          <p>
+            "If what you [consume] doesn't change your behavior, you wasted
+            your time" 
+          </p>
+          <p>- Alex Hormozi</p>
+        </div>
+        <textarea id="change" name="change"></textarea>
+      </form>
+    </section>
+  </div>
+  <button id="subBtn" type="submit">Submit Content Evaluation</button>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
