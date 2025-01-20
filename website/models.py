@@ -12,18 +12,18 @@ class Eval(db.Model):
     isYT = db.Column(db.Boolean, default=False)
     isBook = db.Column(db.Boolean, default=False)
     isOther = db.Column(db.Boolean, default=False)
-    type = db.Column(db.String(100))
+    types = db.Column(db.String(100))
 
     title = db.Column(db.String(100))
     description = db.Column(db.String(100))
 
-    reflect = db.Column(db.String(100))
-    love = db.Column(db.String(100))
-    hate = db.Column(db.String(100))
-    lesson = db.Column(db.String(100))
+    reflect = db.Column(db.String(255))
+    love = db.Column(db.String(255))
+    hate = db.Column(db.String(255))
+    lesson = db.Column(db.String(255))
 
-    insights = db.Column(db.String(100))
-    changes = db.Column(db.String(100))
+    insights = db.Column(db.String(255))
+    changes = db.Column(db.String(255))
 
     date_created = db.Column(db.DateTime(timezone=True), default=func.now())
 

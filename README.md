@@ -97,15 +97,15 @@ CREATE TABLE evals (
     isYT BOOLEAN DEFAULT FALSE,
     isBook BOOLEAN DEFAULT FALSE,
     isOther BOOLEAN DEFAULT FALSE,
-    type VARCHAR(100),
+    types VARCHAR(100),
     title VARCHAR(100),
     description VARCHAR(100),
-    reflect VARCHAR(100),
-    love VARCHAR(100),
-    hate VARCHAR(100),
-    lesson VARCHAR(100),
-    insights VARCHAR(100),
-    change VARCHAR(100),
+    reflect VARCHAR(255),
+    love VARCHAR(255),
+    hate VARCHAR(255),
+    lesson VARCHAR(255),
+    insights VARCHAR(255),
+    change VARCHAR(255),
     date_created DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ``` 

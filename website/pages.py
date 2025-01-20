@@ -34,7 +34,7 @@ def sub_form():
         isYT=isYT,
         isBook=isBook,
         isOther=isOther,
-        type=ctype,
+        types=ctype,
         title=title,
         description=description,
         reflect=reflect,
