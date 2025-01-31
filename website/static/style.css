@@ -109,6 +109,7 @@ input[type="checkbox"] {
 textarea {
     height: 50px;
     width: 100%;
+    padding: 2px;
     border: 2px solid #000;
     border-radius: 5px;
     outline: none;
