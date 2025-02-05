@@ -15,7 +15,7 @@ class Eval(db.Model):
     types = db.Column(db.String(100))
 
     title = db.Column(db.String(100))
-    description = db.Column(db.String(100))
+    description = db.Column(db.Text)
 
     reflect = db.Column(db.String(255))
     love = db.Column(db.String(255))

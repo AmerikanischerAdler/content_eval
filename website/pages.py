@@ -12,10 +12,10 @@ def home():
 def sub_form():
     data = request.get_json()
 
-    isMovie = 'isMovie' in data
-    isYT = 'isYT' in data
-    isBook = 'isBook' in data
-    isOther = 'isOther' in data
+    isMovie = int(request.form.get("isMovie", 0))
+    isYT = int(request.form.get("isYT", 0))
+    isBook = int(request.form.get("isBook", 0))
+    isOther = int(request.form.get("isOther", 0))
     ctype = data.get('type', '')
 
     title = data.get('title', '')
