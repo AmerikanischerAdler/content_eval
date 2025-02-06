@@ -99,7 +99,7 @@ CREATE TABLE evals (
     isOther BOOLEAN DEFAULT FALSE,
     types VARCHAR(100),
     title VARCHAR(100),
-    description VARCHAR(100),
+    description TEXT,
     reflect VARCHAR(255),
     love VARCHAR(255),
     hate VARCHAR(255),
